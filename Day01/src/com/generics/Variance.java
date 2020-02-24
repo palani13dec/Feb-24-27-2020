@@ -6,6 +6,8 @@ import java.util.List;
 public class Variance {
 
 	public static void main(String[] args) {
+		String str = "Lunch time";
+		
 		Animal animal = new Cat();
 
 		//List<Animal> animals = new ArrayList<Cat>();
