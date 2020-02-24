@@ -3,7 +3,7 @@ package com.lab01;
 public class MyStoreUser {
 
 	public static void main(String[] args) {
-		MyStore myStore = new MyStore();
+		MyStore<Integer, String> myStore = new MyStore<>();
 		myStore.add(1, "I");
 		myStore.add(2, "II");
 		myStore.add(3, "III");
