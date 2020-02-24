@@ -8,8 +8,6 @@ public class GenericsBasics {
 		
 		
 		
-		
-		
 		//NOT RECOMMENDED
 		ArrayList<Object> objects =  new ArrayList<Object>();
 		objects.add(true);
