@@ -3,6 +3,10 @@ package com.lab04;
 @FunctionalInterface
 public interface Calc {
 	int compute(int a, int b);
+	
+	default void print() {
+		
+	}
 }
 
 
