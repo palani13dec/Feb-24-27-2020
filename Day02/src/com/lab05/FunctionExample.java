@@ -1,5 +1,6 @@
 package com.lab05;
 
+import java.util.Map;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
@@ -9,7 +10,7 @@ public class FunctionExample {
 		//Function is a FI
 		//takes argument of any Type and returns argument of any Type
 		//map functions accept Function as argument
-		
+
 		Function<Integer, Integer> inc = num -> num + 1;
 		int result = inc.apply(10);
 		System.out.println(result);
