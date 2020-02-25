@@ -20,6 +20,8 @@ public class FunctionExample {
 		
 		System.out.println(len
 							.andThen(inc)
+							.andThen(inc)
+							.andThen(inc)
 							.apply("sam"));
 		
 		
