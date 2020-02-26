@@ -56,10 +56,10 @@ public class Lab10Main {
 		List<Long> squares = library.findSquares();
 		List<Long> cubes = library.findCubes();
 		
-		System.out.prlongln(evenNumbers);
-		System.out.prlongln(oddNumbers);
-		System.out.prlongln(squares);
-		System.out.prlongln(cubes);
+		System.out.println(evenNumbers);
+		System.out.println(oddNumbers);
+		System.out.println(squares);
+		System.out.println(cubes);
 	}
 
 }
