@@ -33,6 +33,7 @@ public class Item {
 * Add a __discount of 10%__ to all the items and print the __total__ price
 
 
+
 ```
 * Use Method Reference wherever possible, if lambdas grow in size
 * Use __map()__, __filter()__, __reduce()__ methods in Stream API. 
