@@ -5,6 +5,6 @@
 
 * Design using parallel streams to load the movies and invoke the URLs
 
-* Use any HTTP of your choice
+* Use any HTTP library of your choice
 * You can also use plain __UrlConnection__ class
 * There are some movies in the list that may not be available in omdb. Create an __errors.txt__ file and add those movies in the list
