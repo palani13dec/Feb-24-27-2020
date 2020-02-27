@@ -6,6 +6,7 @@ import java.util.function.Consumer;
 
 
 
+
 class CricketPortal {
 	private List<Consumer<Integer>> subscribers = new ArrayList<>();
 	
@@ -18,16 +19,27 @@ class CricketPortal {
 	}
 }
 
+class Bookie {
+	public void placeBet(int score) {
+		System.out.println("****Calling agents " + score);
+	}
+	public void romance(int score) {
+		System.out.println("****Romancing somebody " + score);
+	}
+}
 
 public class ObserverPattern {
 
 	public static void main(String[] args) {
 
 		CricketPortal espn = new CricketPortal();
-
+		Bookie emraanHashmi = new Bookie();
+		
 		espn.addSubscriber(score -> System.out.println("***BREAKING NEWS " + score));
 		espn.addSubscriber(score -> System.out.println("--KILL TIME " + score));
 		espn.addSubscriber(score -> System.out.println("Latest score " + score));
+		espn.addSubscriber(emraanHashmi::placeBet);
+		espn.addSubscriber(emraanHashmi::romance);
 		
 		Thread match = new Thread(() -> {
 			while(true) {
